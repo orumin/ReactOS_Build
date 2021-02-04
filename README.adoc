@@ -1,0 +1,25 @@
+= ReactOS/PC98 build enviroment
+
+== What's this 
+
+you can get ReactOS LiveCD for PC-9800 series in automatical (partially)
+
+== How to use
+
+----
+$ docker run --rm -it -v `pwd`/build:/build/reactos/output-MinGW-i386/ orumin/reactos_build:pc98
+root@672bd03dbf65:/build# ./init.sh
+*******************************************************************************
+*         ReactOS Build Environment for Unix-based Operating Systems          *
+*                      by Colin Finck <colin@reactos.org>                     *
+*                                                                             *
+*                                 Version 2.2.1                               *
+*******************************************************************************
+
+For a list of all included commands, type: "help"
+-------------------------------------------------
+
+(RosBE) root@6f349e432ba3:/build/reactos# ../build.sh
+(RosBE) root@6f349e432ba3:/build/reactos# exit
+root@6f349e432ba3:/build# exit
+----
